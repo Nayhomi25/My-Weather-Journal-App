@@ -1,6 +1,6 @@
 // Personal API Key for OpenWeatherMap API
-let baseUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=';
-let apikey = 'cfee773d0045ecd4d542df2d5755e0c4&units=metric';
+const baseUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=';
+const apikey = 'cfee773d0045ecd4d542df2d5755e0c4&units=metric';
 
 // Create a new date instance dynamically with JS
 let date = new Date();
@@ -21,7 +21,7 @@ function performAction(e) {
 
     })
 
-    .then(
+    .then(()=>
         updateUI()
         );
         
